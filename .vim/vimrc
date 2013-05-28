@@ -1,0 +1,55 @@
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+set number					" always show line numbers
+set nocompatible
+set tabstop=4				" a tab is four spaces
+set softtabstop=4
+set shiftwidth=4			" number of spaces to use for autoindenting
+set cindent
+set linebreak
+set hlsearch				" highlight search terms
+set ignorecase				" ignore case when searching
+set incsearch				" show search matches as you type
+
+set encoding=utf-8
+"set fileencodings=utf-8
+set background=dark
+"colorscheme torte
+colorscheme blink
+"filetype plugin on
+
+let g:vim_markdown_folding_disabled=1
+
+" taglist plugin
+"let Tlist_WinWidth = 50 (bug)
+let Tlist_Show_One_File = 1
+let Tlist_Exit_OnlyWindow = 1
+nmap <silent> <F5> :TlistToggle<CR><C-W><C-W>
+nmap <F7> :set number!<CR>
+nmap <F8> ggVG=
+nmap <F9> :set paste!<CR>
+nmap <F10> :map<CR>
+
+set showtabline=0
+set laststatus=2
+set statusline=%F:\ %l
+set hidden "in order to switch between buffers with unsaved change
+nmap <s-tab> :bp<cr>
+nmap <tab> :bn<cr>
+
+" ctags
+"set tag=./tags 
+
+if has("autocmd")
+    " Restore cursor position
+    au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
+endif
+
+" Screen fix
+"if &term =~ '^screen'
+"    set t_k1=^[[11~
+"    set t_k2=^[[12~
+"    set t_k3=^[[13~
+"    set t_k4=^[[14~
+"endif
