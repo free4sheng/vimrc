@@ -93,7 +93,9 @@ nmap <F10> :map<CR>
 " buffer next
 nmap <tab> :bn<cr>
 " buffer previous
-nmap <s-tab> :bp<cr>                    
+nmap <s-tab> :bp<cr>
+" ctags
+map <F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR><CR>
 
 """"""""""""""""""""""""""""""""""""""""
 " history
