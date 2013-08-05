@@ -91,11 +91,11 @@ nmap <F8> ggVG=
 nmap <F10> :map<CR>
 
 " buffer next
-nmap <tab> :bn<cr>
+nmap <TAB> :bn<CR>
 " buffer previous
-nmap <s-tab> :bp<cr>
+nmap <S-TAB> :bp<CR>
 " ctags
-map <F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR><CR>
+nmap <F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR><CR>
 
 """"""""""""""""""""""""""""""""""""""""
 " history
