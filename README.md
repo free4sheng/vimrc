@@ -8,7 +8,8 @@
 
 ## Bundle
 
-	git://github.com/msanders/snipmate.vim.git
+	git://github.com/msanders/snipmate.vim.git (modify)
 	https://github.com/vim-scripts/taglist.vim.git
 	git://github.com/tomtom/tcomment_vim.git
 	git://github.com/plasticboy/vim-markdown.git
+    http://cscope.sourceforge.net/cscope_maps.vim (modify)
